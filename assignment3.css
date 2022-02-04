@@ -1,0 +1,15 @@
+#toc_container {
+    display: table;
+    font-size: 18px;
+    padding: 15px;
+    width: 300px;
+    border: 1px solid black;
+  }
+
+.toc_title {
+    font-weight: 800;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
+}

@@ -1,0 +1,33 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  font-family: diazo-mvb-rough2-ex-cond, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+.nav-icon{
+  display: block;
+  margin: auto;
+  /*margin-left: auto;
+  margin-right: auto; */
+}

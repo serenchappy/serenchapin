@@ -3,26 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/ane2yif.css">
   </head>
   <body>
-    <ul>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="index.html"><img alt="Mushroom" src="../img/mushroom.png" width ="50" height="50" class="nav-icon"></a></li>
-    <li><a href="https://www.linkedin.com/in/seren-chapin-65b53b188"><img alt="Linked-In Logo" src="../img/linkedin.png" width ="35" height="35" class="linkedin"></a></li>
-    <li><a href="https://www.instagram.com/serenchapin/?hl=en"><img alt="Seren's Instagram" src="../img/insta.png" width ="33" height="33" class="insta"></a></li>
-    </ul>
-    <h1 class= "intro"> Hi. I'm <br> Seren Chapin <img src="../img/meep.jpeg" class="img-me" alt="Picture of Seren (the designer)"></h1>
-    <div class="square1"></div>
-    <div class="square2"></div>
-    <div class="square3"></div>
-    <div class="square4"></div>
-    <hr>
-    <section>
+    <header>
+      <div class ="container">
+        <div>
+          <ul><li><a class="logo" href="index.html"><img alt="Mushroom" src="./img/mushroom.png" width ="50" height="50" class="nav-icon"></a></li></ul>
+          <div class= "nav-toggle" id="navToggle">
+            <img id="hamburger" class="navIcon" src="./img/toggle.png" alt="Toggle for mobile website" height="30" width="30">
+            <img class="navIcon hidden" src="./img/close.png" alt="close toggle" height="21" width="21">
+          </div>
+        </div>
+        <nav>
+          <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="index.html">Projects</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    </section>
-  </body>
+    <div class="row">
+      <div class ="col-2">
+      <h1 class= "intro"> Hi. I'm <br> Seren Chapin</h1>
+      </div>
+      <div class = "col-2">
+      <img src="./img/meep.jpeg" class="img-me" alt="Picture of Seren (the designer)">
+      </div>
+    </div>
+
+      <!-- <div class="square1"></div>
+      <div class="square2"></div>
+      <div class="square3"></div>
+      <div class="square4"></div> -->
+
+
+
+<script src="main.js"></script>
+</body>
 </html>

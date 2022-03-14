@@ -367,7 +367,12 @@ iframe{
     font-size: 20px;
     margin-left: 500px;
     margin-right: 500px;
-    line-height: 40px;
+}
+.SB-info li{
+  display: inline-block;
+  float: left;
+  clear: left;
+  margin-bottom: 20px;
 }
 .SB-product{
   max-width: 20%;

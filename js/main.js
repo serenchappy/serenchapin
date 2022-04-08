@@ -12,7 +12,7 @@ btn.addEventListener("click", ()=>{
 const p = document.getElementById("p");
 
 p.addEventListener("mouseover", () =>{
-  if(p.style.color === 'black'){
+  if(p.style.color === "#CE5E79"){
       p.style.color = "#CE5E79";
   }
   else{

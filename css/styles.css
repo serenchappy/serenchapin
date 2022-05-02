@@ -1,9 +1,17 @@
-
-body{
+body,
+html {
+  margin: 0px;
+  padding: 0px;
   background-color: #F9EDEE;
   font-family: new-order,sans-serif;
   font-style: normal;
-  margin: 0px;
+  position: fixed;
+  background-size: cover;
+  z-index: -2;
+}
+canvas{
+  filter: blur(1px);
+  z-index: -1;
 }
 .container{
   display: flex;
@@ -41,7 +49,7 @@ li a:hover {
   right: 1rem;
   }
 .open{
-  height: 100vh;
+  height: 20vh;
 }
 .hidden{
   display: none;
@@ -208,14 +216,16 @@ li a:hover {
 }
 
 
-/*iframe*/
-iframe{
-  position: relative;
-  top: 60px;
-  left: 500px;
-  height: 1000px;
-  width: 800px;
-  margin-bottom: 200px;
+/*Resume*/
+.resume{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
+  border-radius: 25px;
 }
 
 /*Projects*/
@@ -678,26 +688,39 @@ textarea {
   .square4{
     display: none;
   }
+
+
   /*--- about ----*/
+
   .col-2-about h2{
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 22px;
+    line-height: 30px;
   }
   .col-2-about p{
-    font-size: 20px;
+    font-size: 15px;
     line-height: 20px;
   }
   .col-2-about img {
-    float:right;
-    max-width: 100%;
+    margin-top: -50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    margin-bottom: 20px;
   }
-  /*--- iframe ---*/
-  iframe{
-    max-width: 100%;
-    height: 700px;
-    width: 340px;
-    position: relative;
-    left: 4px;
+
+
+
+
+  /*--- resume ---*/
+  .resume{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 150px;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
+    border-radius: 25px;
   }
   /*---contact*---*/
   .contact{
@@ -811,9 +834,9 @@ textarea {
     font-family: new-order,sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 10px;
-    margin-top:200px;
+    margin-top: 50px;
     font-size: 60px;
   }
   .SB-intro p{
@@ -821,19 +844,19 @@ textarea {
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
-    margin-top:-20px;
+    margin-top: -20px;
     margin-bottom: 100px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 10px;
   }
   .background{
-      margin: 0px 0px 0px 0px;
-      height: 800px;
+      margin: 0px 0px 30px 0px;
+      height: 550px;
       background-color: #cccccc;
       background-image: linear-gradient(to right, white , #8591A6);
   }
   .SB-hp{
-    max-width: 80%;
+    max-width: 75%;
     border-radius: 25px;
     box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
     transition: transform 0.5s;
@@ -841,7 +864,7 @@ textarea {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: 50px;
+    top: -30px;
     z-index: 1;
   }
   .SB-pd{
@@ -854,58 +877,62 @@ textarea {
     font-family: new-order,sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
   }
 
   .SB-info p{
     font-family: new-order,sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    line-height: 50px;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 23px;
   }
   .SB-info h2{
     font-family: new-order,sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;
-    margin-top: 150px;
-    margin-left: 10px;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
   }
   .SB-info ul{
       font-size: 20px;
       margin-left: 10px;
       margin-right: 10px;
-      line-height: 40px;
+      line-height: 25px;
   }
   .row3{
-    margin-top: 100px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
   }
   .SB-product{
-    max-width: 20%;
+    max-width: 23%;
     border-radius: 25px;
     box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
     transition: transform 0.5s;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: -80px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .SB-product1{
-    max-width: 40%;
+    max-width: 60%;
     border-radius: 25px;
     box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
     transition: transform 0.5s;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 10px;
   }
 
 
@@ -914,9 +941,9 @@ textarea {
     font-family: new-order,sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 10px;
-    margin-top:200px;
+    margin-top: 50px;
     font-size: 60px;
   }
   .At-intro p{
@@ -924,25 +951,19 @@ textarea {
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
-    margin-left: 10px;
+    margin-top: -20px;
+    margin-bottom: 100px;
+    margin-left: 20px;
     margin-right: 10px;
-    line-height: 50px;
   }
   .background-at{
-      margin: 0px 0px 0px 0px;
-      height: 1000px;
+      margin: 0px 0px 40px 0px;
+      height: 330px;
       background-color: #cccccc;
       background-image: linear-gradient(to right, white , #99B1A7);
   }
   .At1{
-    max-width: 50%;
-    border-radius: 25px;
-    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
-    transition: transform 0.5s;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 1;
+    display: none;
   }
   .At2{
     display: none;
@@ -956,61 +977,54 @@ textarea {
     font-style: normal;
     font-size: 40px;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
   }
 
   .At-info p{
     font-family: new-order,sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    line-height: 50px;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 23px;
   }
   .At-info h2{
     font-family: new-order,sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;
-    margin-top: 150px;
-    margin-left: 10px;
-  }
-  .At-info ul{
-      font-size: 20px;
-      margin-left: 500px;
-      margin-right: 500px;
-      line-height: 40px;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
   .At-ideation1{
-    max-width: 90%;
+    max-width: 70%;
     border-radius: 25px;
     box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
     transition: transform 0.5s;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 20px;
+    margin-top: 25px;
+    margin-bottom: -90px;
   }
   .At-ideation2{
-    max-width: 90%;
-    border-radius: 25px;
-    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
-    transition: transform 0.5s;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: none;
   }
   .At-ideation3{
-    max-width: 90%;
+    max-width: 70%;
     border-radius: 25px;
     box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
     transition: transform 0.5s;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
   }
   .row3{
     margin-top: 100px;
@@ -1020,6 +1034,9 @@ textarea {
   }
 
 }
+
+
+
 
 /*------------- media query for iPad ---------*/
 @media screen and (min-width: 501px) and (max-width: 1100px){
@@ -1099,7 +1116,7 @@ textarea {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 70px;
+    margin-top: 50px;
   }
   .col-2-about{
     flex-basis: 100%;
@@ -1109,8 +1126,8 @@ textarea {
     font-family: new-order,sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 33px;
+    line-height: 38px;
     margin-left: 50px;
     margin-right: 50px;
 
@@ -1119,13 +1136,13 @@ textarea {
     font-family: new-order,sans-serif;
     font-weight: 100;
     font-style: normal;
-    font-size: 28px;
+    font-size: 23px;
     line-height: 35px;
     margin-left: 50px;
     margin-right: 50px;
   }
   .col-2-about img{
-    max-width: 80%;
+    max-width: 50%;
     border-radius: 25px;
     box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
     transition: transform 0.5s;
@@ -1138,13 +1155,15 @@ textarea {
     transform: translateY(-30px);
   }
 
-  /*--- iframe ---*/
-  iframe{
-    max-width: 100%;
-    height: 1000px;
-    width: 700px;
-    position: relative;
-    left:50px;
+  /*--- resume ---*/
+  .resume{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 50px;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
+    border-radius: 25px;
   }
   /*---contact*---*/
   .contact{
@@ -1667,36 +1686,40 @@ textarea {
     font-family: new-order,sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 50px;
+    margin-right: 200px;
   }
   .col-2-about p{
     font-family: new-order,sans-serif;
     font-weight: 100;
     font-style: normal;
-    font-size: 28px;
-    line-height: 35px;
+    font-size: 25px;
+    line-height: 27px;
+    margin-right: 200px;
   }
   .col-2-about img{
-    max-width: 70%;
+    max-width: 65%;
     border-radius: 25px;
     box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
     transition: transform 0.5s;
-    margin-left: 100px;
+    margin-left: 210px;
   }
   .col-2-about img:hover{
     transform: translateY(-30px);
   }
 
 
-  /*iframe*/
-  iframe{
-    position: relative;
-    top: 60px;
-    left: 500px;
-    height: 1000px;
-    width: 800px;
-    margin-bottom: 200px;
+  /*resume*/
+  .resume{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
+    border-radius: 25px;
   }
 
   /*Projects*/
@@ -2028,7 +2051,6 @@ textarea {
     font-style: normal;
     font-size: 20px;
     color: black;
-
   }
   .Email{
     flex-basis: 50%;

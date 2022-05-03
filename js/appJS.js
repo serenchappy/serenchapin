@@ -1,4 +1,3 @@
-//Selectors
 const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
@@ -44,7 +43,6 @@ function deleteCheck(e){
   }
   if(item.classList[0] === "complete-btn"){
     const todo = item.parentElement;
-    hou = now.
     todo.classList.toggle("completed");
   }
 }

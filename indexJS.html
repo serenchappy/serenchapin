@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Todo List Final</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ane2yif.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/styleJS.css">
+    <script defer src="/js/appJS.js" charset="utf-8"></script>
+  </head>
+  <body onload= "initClock()">
+    <header>
+      <h1>Welcome Seren!</h1>
+    </header>
+    <div class="datetime">
+      <div class="date">
+        <span id="dayname">Day</span>
+        <span id="month">Month</span>
+        <span id="daynum">00</span>
+        <span id="year">Year</span>
+      </div>
+      <div class="time">
+        <span id="hour">00</span>:
+        <span id="minutes">00</span>:
+        <span id="seconds">00</span>
+        <span id="period">AM</span>
+      </div>
+    </div>
+
+
+    <div class="todoHeading">
+      <h2>Create Your ToDo List</h2>
+    </div>
+      <form>
+        <input type="text" class="todo-input">
+        <button  class="todo-button" type="submit">
+        <i class="fas fa-plus-square"></i>
+        </button>
+      </form>
+
+      <div class="todo-container">
+        <ul class="todo-list"></ul>
+      </div>
+  </body>
+</html>

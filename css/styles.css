@@ -5,12 +5,17 @@ html {
   background-color: #F9EDEE;
   font-family: new-order,sans-serif;
   font-style: normal;
-  position: fixed;
   background-size: cover;
-  z-index: -2;
+  position: relative;
+  z-index: 1;
 }
 canvas{
   filter: blur(1px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: -1;
 }
 .container{
@@ -20,6 +25,7 @@ canvas{
   max-width: 500rem;
   margin: 0 auto;
   padding: 0 1rem;
+  z-index: 3;
 }
 ul{
   padding: 0;
@@ -111,7 +117,7 @@ li a:hover {
   top:-630px;
 }
 
-.square1 {
+/* .square1 {
   height: 100px;
   width: 100px;
   background-color: #CE5E79;
@@ -162,8 +168,8 @@ li a:hover {
   right: -740px;
   transition: transform 0.5s;
 
-}
-.square1:hover{
+} */
+/* .square1:hover{
   transform: translateY(-30px);
 }
 .square2:hover{
@@ -174,7 +180,7 @@ li a:hover {
 }
 .square4:hover{
   transform: translateY(-30px);
-}
+} */
 
 
 
@@ -665,35 +671,23 @@ textarea {
     font-size: 100px;
     line-height: 100px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+    margin-right: 0;
+    margin-left: -80px;
+    margin-top:-150px;
   }
   .col-2 img{
-    float: right;
     max-width: 100%;
-  }
-  .project1{
-    position:relative;
-    top:-100px;
-  }
-  .square1{
-    display: none;
-  }
-  .square2{
-    display: none;
-  }
-  .square3{
-    display: none;
-  }
-  .square4{
-    display: none;
+    margin-bottom:-100px;
+    position: relative;
+    right: 50px;
   }
 
 
   /*--- about ----*/
 
   .col-2-about h2{
-    font-size: 22px;
+    font-size: 20px;
     line-height: 30px;
   }
   .col-2-about p{
@@ -705,8 +699,9 @@ textarea {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 70%;
-    margin-bottom: 20px;
+    max-width: 60%;
+    margin-top: -60px;
+    margin-bottom: 10px;
   }
 
 
@@ -1498,7 +1493,7 @@ textarea {
 }
 
 /*Media Screen for Computer */
-@media screen and (min-width: 1101px) and (max-width: 2000px){
+@media screen and (min-width: 1101px) and (max-width: 3000px){
   body{
     background-color: #F9EDEE;
     font-family: new-order,sans-serif;
@@ -1553,22 +1548,20 @@ textarea {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 200px;
-    margin-top: 180px;
-    margin-left: 40px;
-    margin-right: -20px;
+    margin-bottom: 10px;
   }
   .col-2{
     flex-basis: 50%;
-    min-width: 300px;
   }
 
   .col-2 img{
-    max-width: 80%;
+    max-width: 90%;
     border-radius: 25px;
     box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
     transition: transform 0.5s;
-    margin-left: 30px;
+    margin-left:-10px;
+    padding-left: 0px;
+    margin-top: -100px;
   }
   .col-2 img:hover{
     transform: translateY(-30px);
@@ -1578,96 +1571,13 @@ textarea {
     font-family: new-order,sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 150px;
+    font-size: 140px;
     line-height: 150px;
-    margin-top: -300px;
+    margin-top: -10px;
+    margin-right:0px;
+    margin-left: 100px;
+    padding-right: 0px;
   }
-  .background1{
-    border-radius: 25px;
-    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    height: 70%;
-  }
-  .project1{
-    border-radius: 20px;
-    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    height: 60%;
-    position: relative;
-    top:-630px;
-  }
-
-  .square1 {
-    height: 100px;
-    width: 100px;
-    background-color: #CE5E79;
-    color:inherit;
-    border-radius: 10px;
-    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
-    position: relative;
-    top: 10px;
-    right: 80px;
-    transition: transform 0.5s;
-  }
-  .square2 {
-    height: 100px;
-    width: 100px;
-    background-color: #CE5E79;
-    border-radius: 10px;
-    position: relative;
-    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
-    color:inherit;
-    right: -740px;
-    top: -710px;
-    transition: transform 0.5s;
-
-  }
-  .square3 {
-    height: 100px;
-    width: 100px;
-    background-color: #EE926B;
-    border-radius: 10px;
-    position: relative;
-    color:inherit;
-    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
-    right: 80px;
-    top: -805px;
-    transition: transform 0.5s;
-
-  }
-
-  .square4 {
-    height: 100px;
-    width: 100px;
-    background-color: #EE926B;
-    border-radius: 10px;
-    position: relative;
-    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
-    color:inherit;
-    top: -290px;
-    right: -740px;
-    transition: transform 0.5s;
-
-  }
-  .square1:hover{
-    transform: translateY(-30px);
-  }
-  .square2:hover{
-    transform: translateY(-30px);
-  }
-  .square3:hover{
-    transform: translateY(-30px);
-  }
-  .square4:hover{
-    transform: translateY(-30px);
-  }
-
 
 
   /*Aboutme.html*/
@@ -2027,7 +1937,6 @@ textarea {
 
   /*Contact Me*/
   form{
-    display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -2035,15 +1944,14 @@ textarea {
   }
 
   .contact{
-    margin-top: 100px;
+    margin-top: 70px;
     text-align: center;
     font-family: new-order,sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 35px;
+    font-size: 40px;
   }
   .Name{
-    flex-basis: 50%;
     min-width: 300px;
     text-align: center;
     font-family: new-order,sans-serif;
@@ -2051,9 +1959,10 @@ textarea {
     font-style: normal;
     font-size: 20px;
     color: black;
+    position: relative;
+    left: 100px;
   }
   .Email{
-    flex-basis: 50%;
     min-width: 300px;
     text-align: center;
     font-family: new-order,sans-serif;
@@ -2061,6 +1970,8 @@ textarea {
     font-style: normal;
     font-size: 20px;
     color: black;
+    position: relative;
+    right: 100px;
   }
   input{
     font-family: new-order,sans-serif;
@@ -2086,7 +1997,7 @@ textarea {
       border-radius: 15px;
       font-size: 16px;
       padding: 10px 10px;
-      width: 1000px;
+      width: 700px;
       height: 300px;
       margin: 10px 10px 10px 10px;
       box-shadow: inset 0 -.1em .1em rgba(0,0,0,0.1), 0.1em 0.1em .5em rgba(0,0,0,0.3);

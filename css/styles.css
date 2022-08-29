@@ -436,16 +436,6 @@ li a:hover {
   margin-bottom: 100px;
   margin-left: 240px;
 }
-.At-intro h3{
-  font-family: new-order,sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 17px;
-  margin-top:-20px;
-  margin-bottom: 100px;
-  margin-left: 240px;
-
-}
 .background-at{
     margin: 0px 0px 0px 0px;
     height: 1000px;
@@ -506,6 +496,14 @@ li a:hover {
   font-style: normal;
   font-size: 50px;
   margin-top: 150px;
+  margin-left: 500px;
+}
+.At-info h3{
+  font-family: new-order,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  margin-top: 30px;
   margin-left: 500px;
 }
 .At-info ul{
